@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>StarLink Home</title>
+		<link href="css/cssstar.css" rel="stylesheet" type="text/css">
+		<style>
+			body{
+				margin:0;
+				padding:0;
+				background:#000;
+				color:#fff;
+			}
+			.header{
+				width:100%;
+				height:95vh;
+				background: url("images/1.jpg");
+				background-size:cover;
+			}
+			.head{
+				display:flex;
+				
+			}
+			.head h2, .head p{
+			/*	position:absolute;*/
+				flex-basis:48%;
+				text-align:right;
+				position:fixed;
+			}
+			.head h2{
+				left:42%;
+				letter-spacing:6px;
+				font-size:30px;
+			}
+			.head span{
+				font-size:40px;
+			}
+			.head p{
+				right:7%;
+				top:-25px;
+				font-size:40px;
+			}
+			.headBody, .secondBody, .thirdBody, .fourthBody, .fifthBody{
+				position:relative;
+				width:85%;
+				margin:0 auto;
+			}
+			.headBodyInner, .secondBodyInner, .thirdBodyInner, .fourthBodyInner, .fifthBodyInner{
+				position:absolute;
+				top:930px;
+			}
+			h4 {
+				font-size:18px;
+				font-weight:normal;
+			}
+			h1{
+			margin-top:-16px;
+			font-size:50px;
+			font-weight:bold;
+			}
+			button{
+				background:transparent;
+				color:#fff;
+				border:none;
+				border:3px solid #fff;
+				padding:30px 75px;
+				font-size:14px;
+				font-weight:bold;
+			}
+			.second{
+			width:100%;
+			height:95vh;
+			background: url("images/2.jpg");
+			background-size:cover;
+			}
+			.third{
+			width:100%;
+			height:95vh;
+			background: url("images/3.jpg");
+			background-size:cover;
+			}
+			.fourth{
+			width:100%;
+			height:95vh;
+			background: url("images/4.jpg");
+			background-size:cover;
+			}
+			.fifth{
+			width:100%;
+			height:95vh;
+			background: url("images/5.jpg");
+			background-size:cover;
+			}
+			footer{
+				margin:40px 0;
+			}
+			.footerInner{
+				width:92%;
+				margin:0 auto;
+			}
+			.copyright p{
+				text-align:center;
+				color:grey;
+			}
+			.socials ul li{
+				list-style-type:none;
+				display:inline-block;
+				width:13%;
+				font-size:12px;
+				font-weight:bold;
+			}
+			#menufield{
+				position:relative;
+				display:none;
+			}
+			.menufieldInner{
+				background:black;
+				height:100vh;
+				width:40%;
+				position:absolute;
+				right:0;
+				text-align:right;
+			}
+			.menufieldInner p, .menufieldInner ul li{
+				margin-right:50px;				
+			}
+			.menufieldInner p{
+			font-weight:bold;
+			font-size:25px;
+			}
+			.menufieldInner ul{
+				margin-top:-15px;
+			}
+			.menufieldInner ul li{
+				font-weight:normal;
+				list-style-type:none;
+				font-size:22px;
+				line-height:50px;
+				border-bottom: 1px solid grey;
+			}
+			a {
+				text-decoration:none;
+				color:white;				
+			}
+			
+			
+			@media only screen and (min-width:1200px){
+				.header, .second, .third, .fourth, .fifth{
+					height:145vh;
+					background-position:center;
+				}
+				.headBodyInner, .secondBodyInner, .thirdBodyInner, .fourthBodyInner, .fifthBodyInner{
+				top:690px;
+				}
+				.footerInner{
+				width:60%;
+				}
+				.socials > li > .specialLi{
+				width:28%;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<section class="header">
+			<div class="head" id="head">
+				<h2><a href="#" >SPACE<span>X</span></a></h2>
+				<p id="open" onclick="menuopen()">&#61;</p>
+			</div>
+			<div id="menufield">
+				<div class="menufieldInner">
+				<p id="close" onclick="menuclose()">X</p>
+				<ul>
+					<li><a href="#" >FALCON 9</a></li>
+					<li><a href="#" >FALCON HEAVY</a></li>
+					<li><a href="#" >DRAGON</a></li>
+					<li><a href="#" >STARSHIP</a></li>
+					<li><a href="#" >HUMAN SPACEFLIGHT</a></li>
+					<li><a href="#" >RIDESHARE</a></li>
+					<li><a href="#" >STARLINK</a></li>
+					<li><a href="#" >MISSION</a></li>
+					<li><a href="#" >LAUNCHES</a></li>
+					<li><a href="#" >CAREERS</a></li>
+					<li><a href="#" >UPDATES</a></li>
+					<li><a href="#" >SHOP</a></li>
+				</ul>
+			</div>
+			</div>
+			
+			<div class="headBody">
+				<div class="headBodyInner">
+					<h4>UPCOMING LAUNCH</h4>
+					<h1>STARLINK <br>MISSION</h1>
+					<button>REWATCH</button>
+				</div>
+			</div>
+		</section>
+		
+		<section class="second">
+			<div class="secondBody">
+				<div class="secondBodyInner">
+					<h4>RECENT LAUNCH</h4>
+					<h1>SES-22 MISSION</h1>
+					<button>REWATCH</button>
+				</div>
+			</div>
+		</section>
+		
+		<section class="third">
+		<div class="thirdBody">
+		<div class="thirdBodyInner">
+		<h4>RECENT LAUNCH</h4>
+		<h1>GLOBALSTAR <br>FM15 MISSION</h1>
+		<button>REWATCH</button>
+		</div>
+		</div>
+		</section>
+		
+		<section class="fourth">
+		<div class="fourthBody">
+		<div class="fourthBodyInner">
+		<h1>STARSHIP <br>UPDATE</h1>
+		<button>REWATCH</button>
+		</div>
+		</div>
+		</section>
+		
+		<section class="fifth">
+		<div class="fifthBody">
+		<div class="fifthBodyInner">
+		<h1>STARSHIP TO <br>LAND NASA <br>ASTRONAUTS ON <br>THE MOON</h1>
+		<button>REWATCH</button>
+		</div>
+		</div>
+		</section>
+		
+		<footer>
+			<div class="footerInner">
+				<div class="copyright">
+					<p>SPACEX © 2022</p>
+				</div>
+				<div class="socials">
+					<ul>
+						<li><a href="#" >TWITTER</a></li>
+						<li><a href="#" >YOUTUBE</a></li>
+						<li><a href="#" >INSTAGRAM</a></li>
+						<li><a href="#" >FLICKR</a></li>
+						<li><a href="#" >LINKEDIN</a></li>
+						<li class="specialLi"><a href="#" >PRIVACY POLICY</a></li>
+						<li><a href="#" >SUPPLIERS</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		</footer>
+
+		<script>
+			
+			var menufield = document.getElementById("menufield");
+			
+			function menuopen (){
+				menufield.style.display ="block";
+			}
+			function menuclose(){
+				menufield.style.display ="none";
+			}
+			
+			window.onscroll = function() {scrolling()};
+			
+			function scrolling() {
+			if (document.body.scrollTop > 1050 || document.documentElement.scrollTop > 1050) {
+			document.getElementById("head").style.opacity = "0";
+			}
+			else{
+			document.getElementById("head").style.opacity = "1";
+			}
+			}
+		
+		</script>
+	</body>
+</html>
